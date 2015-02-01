@@ -1,0 +1,16 @@
+{
+  "name": "data_science_in_node_example_2",
+  "description": "An example of how to use recommender systems to predict what customers might like.",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Sean Byrnes",
+  "homepage": "https://github.com/sbyrnes/DataScience_in_Node.js",
+  "main": "./science.js",
+  "dependencies": {
+    "csv-parse": "0.0.6",
+    "likely": "^1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "repository": "https://github.com/sbyrnes/DataScience_in_Node.js"
+}

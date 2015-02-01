@@ -1,0 +1,16 @@
+{
+  "name": "data_science_in_node_example_1",
+  "description": "An example of how to use regression modeling to predict the future.",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Sean Byrnes",
+  "homepage": "https://github.com/sbyrnes/DataScience_in_Node.js",
+  "main": "./science.js",
+  "dependencies": {
+    "csv-parse": "0.0.6",
+    "lyric-node": "^0.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "repository": "https://github.com/sbyrnes/DataScience_in_Node.js"
+}
