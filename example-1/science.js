@@ -28,9 +28,15 @@ if(process.argv[3])
 // Future value to estimate
 var estimationInput = new Array();
     estimationInput['label'] = new Array();
+    /**
     estimationInput['label'][0] = '1/1/14';
     estimationInput['x'] = new Array();
-    estimationInput['x'][0] = 366;
+    estimationInput['x'][0] = 366;*/
+    estimationInput['label'][0] = '1/11/13';
+    estimationInput['x'] = new Array();
+    estimationInput['x'][0] = 11;
+
+
 
 // Read the raw file data
 fs.readFile(file, function (err, rawData) {
@@ -47,6 +53,8 @@ fs.readFile(file, function (err, rawData) {
       var model = Lyric.buildModel(inputData, polynomialDegree);
 
       var estimateData = Lyric.applyModel(estimationInput, model, polynomialDegree);
+
+      console.log(estimateData);
 
       console.log('Estimate:\n Number of users will be ' + estimationInput['label'][0] + ' is ' + estimateData[0]['y']);
       console.log(' (Using ' +polynomialDegree + ' order polynomial)\n')
@@ -65,7 +73,7 @@ function transformCSVToLyric(csvData, callback)
   for(var i=1; i<csvData.length; i++)
   {
     result['x'][i-1] = csvData[i][0];
-    result['y'][i-1] = csvData[i][1];
+    result['y'][i-1] = parseInt(csvData[i][1]);
   }
 
   // instead of using the date, use the ordinal
