@@ -1,5 +1,5 @@
 # DataScience_in_Node.js
-Examples and exercises from the Data Science in Node.js talk.
+Examples and exercises from the [Data Science in Node.js](http://www.slideshare.net/SeanByrnes1/data-science-in-nodejs) talk.
 
 There are two examples in this tutorial.
 
